@@ -3,11 +3,47 @@
 <meta charset="utf-8">
 <link href="style.css" rel="stylesheet"/>
 <script src="app.js"></script>
-
 <head>
-    <title>안지영의 홈페이지</title>
+  <title>안지영의 홈페이지</title>
+  <style>
+    .imgBoxDiv{
+      width: 300px;
+      height: 300px;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      box-shadow: 2px 2px 8px 0px #000;
+    }
+    .imgDiv{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: lightblue;
+      z-index: 1;
+      -webkit-transition:all .5s ease;
+      transition: all .5s ease;
+      bottom: 0px;
+      overflow: hidden;
+      }
+      .imgBoxDiv:hover .imgDiv{
+        bottom: 60px;
+      }
+      .imgDescDiv{
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        color:#000000;
+        background:#C1FF56;
+        position: absolute;
+        bottom: 0px;
+      }
+    </style>
 </head>
 <body>
-<h1>Hello! This is my page</h1>  
+<h1>Hello! This is my page</h1>
+  <div class="imgBoxDiv">
+    <div class="imgDiv"><img src="retriver.png"></div>
+    <div class="imgDescDiv">Welcome to 지영's homepage<div>
+  </div>
 </body>
 </html>
